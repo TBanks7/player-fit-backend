@@ -617,7 +617,7 @@ class PlayerRecommendationSystem:
                       exclude_current_team: bool = False,
                       custom_metrics: Optional[List[str]] = None,
                       alternative_positions: bool = False,
-                      position_weight: float = 0.7) -> pd.DataFrame:
+                      position_weight: float = 0.0) -> pd.DataFrame:
         """
         Find players with similar playing styles.
 

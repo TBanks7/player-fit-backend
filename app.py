@@ -162,7 +162,7 @@ def find_similar_players():
         return jsonify({"error": "Missing required parameter: player"}), 400
     
     # Get optional parameters
-    count = int(request.args.get('count', 5))
+    count = int(request.args.get('count', 20))
     exclude_team = request.args.get('exclude_team', 'false').lower() == 'true'
     use_positions = request.args.get('use_positions', 'true').lower() == 'true'
     alternative_positions = request.args.get('alternative_positions', 'false').lower() == 'true'
